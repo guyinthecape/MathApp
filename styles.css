@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#choiceButtons, #nextQuestion {
+    margin-bottom: 20px;
+}
+
+.choiceButton, #nextQuestion {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.choiceButton:hover, #nextQuestion:hover {
+    background-color: #3700b3;
+}
+
+#question, #feedback {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#answerInput, #checkAnswer {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+#answerInput {
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#checkAnswer {
+    background-color: #03dac6;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.timer-circle {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.timer-circle-back, .timer-circle-front {
+    fill: none;
+    stroke-width: 10;
+    cx: 50;
+    cy: 50;
+    r: 45;
+}
+
+.timer-circle-back {
+    stroke: #eee;
+}
+
+.timer-circle-front {
+    stroke: #6200ea;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+    fill: #333;
+    font-size: 20px; /* Adjust size as needed */
+    font-family: 'Roboto', sans-serif;
+}

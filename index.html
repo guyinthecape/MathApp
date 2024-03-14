@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="timer">
+            <svg class="timer-circle" viewBox="0 0 100 100">
+                <circle class="timer-circle-back" cx="50" cy="50" r="45"></circle>
+                <circle class="timer-circle-front" cx="50" cy="50" r="45"></circle>
+                <text x="50" y="55" class="timer-text" text-anchor="middle"></text>
+            </svg>
+        </div>
+        <div id="choiceButtons">
+            <button class="choiceButton" data-type="addition">Addition</button>
+            <button class="choiceButton" data-type="subtraction">Subtraction</button>
+            <button class="choiceButton" data-type="percentage">Percentage</button>
+            <button class="choiceButton" data-type="mix">Mix</button>
+        </div>
+        <div id="question"></div>
+        <input type="text" inputmode="decimal" pattern="[0-9]*" id="answerInput" placeholder="Enter your answer">
+        <button id="checkAnswer">Check Answer</button>
+        <button id="nextQuestion">&#10148;</button> <!-- Arrow icon for Next -->
+        <div id="feedback"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
